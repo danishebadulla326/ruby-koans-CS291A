@@ -14,6 +14,20 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
+  if a<=0 || b<=0 || c<=0
+    raise TriangleError.new("One or more sides is <= 0.")
+  elsif a+b<c || b+c<=a || a+c<=b
+    raise TriangleError.new("Side lengths can't create a triangle")
+  end
+
+  triangle_type = :scalene
+  if a == b && b == c
+    triangle_type = :equilateral
+  elsif a == b || b == c || a == c
+    triangle_type = :isosceles
+  end
+
+  return triangle_type
   # WRITE THIS CODE
 end
 
