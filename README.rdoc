@@ -1,3 +1,9 @@
+= Project 1 CS 291A
+
+This is the repository of project 1 CS 291A for Danish Ebadulla
+
+----------------------------------------------------------------------------------------------------------
+
 = Ruby Koans
 
 The Ruby Koans walk you along the path to enlightenment in order to learn Ruby.
